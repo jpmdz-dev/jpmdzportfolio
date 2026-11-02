@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPMDZ PORTFOLIO</title>
+
+    <!-- Apply saved theme before the page paints (prevents a light flash) -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem("portfolio-theme");
+                var dark = saved
+                    ? saved === "dark"
+                    : window.matchMedia("(prefers-color-scheme: dark)").matches;
+                document.documentElement.classList.toggle("dark-mode", dark);
+            } catch (e) { }
+        })();
+    </script>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="Pau" src="images/pau.jpg" alt="Profile">
+            <h1>jpmdz-dev</h1>
+
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Dark / light mode -->
+            <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch to dark mode"
+                title="Switch to dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <!-- Burger menu (mobile) -->
+            <button type="button" id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open menu"
+                aria-expanded="false" aria-controls="nav-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        
+<section id="home">
+
+    <!-- LEFT SIDE: INTRODUCTION -->
+    <div class="hero-content">
+
+        <span class="hero-subtitle">
+            WELCOME TO MY PORTFOLIO
+        </span>
+
+        <h1>
+            Hi, I'm <span>Joana!</span>
+        </h1>
+
+        <h2>Web Developer & Web Designer</h2>
+
+        <p>
+            Hello! I'm a Web Developer and Web Designer passionate
+            about building and creating beautiful and functional
+            websites. I enjoy turning creative ideas into responsive
+            and user-friendly digital experiences.
+        </p>
+
+        <div class="action-btn">
+
+            <a href="#contact">
+                Hire Me!
+                <i class="fas fa-paper-plane"></i>
+            </a>
+
+            <a href="#projects">
+                View Projects
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE: PROFILE IMAGE -->
+    <div class="hero-image">
+
+        <div class="hero-image-glow"></div>
+
+        <img
+            src="images/pau2.jpg"
+            alt="Joana's profile picture"
+        >
+
+    </div>
+
+</section>
+
+
+        <section id="about">
+            <p class="Developer">Web Developer & Web Designer</p>
+            <h1>Hi I'm <strong class="name">Joana</strong></h1>
+            <p>Hi! I'm Joana Paula Sagun, a Student Web Developer passionate about technology, creativity, and building
+                websites.
+                I enjoy learning how to turn ideas into functional, responsive, and visually appealing websites using
+                HTML, CSS, and JavaScript.
+            </p>
+            <p>As a student, I continuously develop my programming skills by exploring new technologies and working on
+                personal and academic projects,
+                and I also have an interest in administrative tasks, data entry, document organization, and digital
+                management.
+            </p>
+
+            <p>I believe that every project is an opportunity to learn, improve, and grow. My goal is to become a
+                skilled
+                web developer who creates meaningful and user-friendly digital experiences.
+            </p>
+        </section>
+
+        <section id="services" class="services">
+            <div class="services-header">
+                <h2 class="title">WHAT I CAN DO FOR YOU</h2>
+                <h2>My Services</h2>
+            </div>
+
+            <!-- Services 1-->
+            <div class="service-container">
+                <div class="service-icon">
+                    <h3>Web Development</h3>
+                    <p>Building responsive and functional websites using HTML, CSS, and JavaScript</p>
+                </div>
+            </div>
+
+            <!-- Services 2 -->
+            <div class="service-container">
+                <div class="service-icon">
+                    <h3>Web Design & UI Design</h3>
+                    <p>Creating clean, modern, and user-friendly website layouts.</p>
+                </div>
+            </div>
+
+            <!-- Services 3 -->
+            <div class="service-container">
+                <div class="service-icon">
+                    <h3>Data Entry</h3>
+                    <p>Encoding, updating, and organizing digital information and records.</p>
+                </div>
+            </div>
+
+            <!-- Services 4 -->
+            <div class="service-container">
+                <div class="service-icon">
+                    <h3>Administrative Support</h3>
+                    <p>Organizing files, maintaining documents, and managing digital records.</p>
+                </div>
+            </div>
+
+            <!-- Services 5 -->
+            <div class="service-container">
+                <div class="service-icon">
+                    <h3>Email Management</h3>
+                    <p>Organizing emails, sorting messages, and assisting with communication</p>
+                </div>
+            </div>
+
+            <!-- Services Footer -->
+            <div class="services-footer">
+                <h3>Have a project in mind?</h3>
+                <p>Let's work together and bring your ideas to life.</p>
+                <a href="#contact" class="service-btn">Let's Connect</a>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+           
+            <!-- Projects 1 -->
+             
+
+            <div class="project-image">
+                <img src="images/Project.png" alt="The Coffee Pawws Website">
+            </div>
+
+            <div class="project-content">
+                <h1 class="project-category">My Recently Project</h1>
+                <h3>The Coffee Paws</h3>
+                <p>A cozy cafe website featuring coffee products, pet rentals, menu items, customer reservation, and
+                    contact information.</p>
+            </div>
+            <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="project-buttons">
+                <a href="https://jpmdz-dev.github.io/Coffee-Pawws/" target="_blank" rel="noopener noreferrer"
+                    class="code-btn">View Website<i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-header">
+                <span class="contact-title">Get in Touch</span>
+                <h2>Let's Connect</h2>
+                <p>Have a project, opportunity, or collaboration in mind? Feel free to contact me. I'd love to hear from
+                    you</p>
+            </div>
+
+            <div class="contact-container">
+
+                <!-- CONTACT INFORMATION -->
+                <div class="contact-info">
+
+                    <h3>Contact Information</h3>
+                    <p class="contact-description">
+                        I'm always open to discussing new projects,
+                        creative ideas, and opportunities to learn
+                        and grow.
+                    </p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>sagunpaula28@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Philippines</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div>
+                            <h4>Profession</h4>
+                            <p>Student Web Developer</p>
+                        </div>
+                    </div>
+
+                    <h4 class="social-title">Connect With Me</h4>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/jpmdz28" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/jpmdz_sagun/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://github.com/jpmdz-dev" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/joana-paula-m-sagun-319b5240a/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FORM (sent with Web3Forms by script.js) -->
+                <div class="contact-form-container">
+
+                    <h3>Send Me a Message</h3>
+
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+
+                        <!-- Get a free key at web3forms.com and replace the text below -->
+                        <input type="hidden" name="access_key" value="52e92249-1aaa-40fe-acc0-6ebfbe9621cc">
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            <span class="error-msg" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            <span class="error-msg" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                            <span class="error-msg" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                                required></textarea>
+                            <span class="error-msg" aria-live="polite"></span>
+                        </div>
+
+                        <button type="submit" class="contact-btn">
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <p class="form-status" role="status" aria-live="polite"></p>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> JPMDZ Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="jscript.js" defer></script>
+</body>
+
+</html>
